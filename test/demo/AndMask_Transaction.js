@@ -1,4 +1,4 @@
-import jsTPS_transaction from './src/jsTPS.js'
+import jsTPS_transaction from '../src/jsTPS.js';
 
 class AndMask_Transaction extends jsTPS_transaction {
     constructor(initNum, initIntNum, initMask) {
@@ -31,3 +31,4 @@ class AndMask_Transaction extends jsTPS_transaction {
         return "And Mask " + this.mask;
     }
 }
+export default AndMask_Transaction
