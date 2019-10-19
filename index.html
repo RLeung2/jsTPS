@@ -3,16 +3,26 @@
 
 <head>
     <title>jsTPS Tests</title>
-
-    
-
+ 
 </head>
 
 <body>
-    Hello
-    <div id="demo">
-        Hello
+    <div id="current_jstps">
+        CURRENT jsTPS: 
     </div>
+    <br>
+    <div id="num">
+        num is: 
+    </div>
+    <br>
+    <input type="number" id="amount_input" value="0"/>
+    <button id="addTransactionButton">Add Transaction</button>
+    <br>
+    <button id="undoTransactionButton">Undo Transaction</button>
+    <button id="redoTransactionButton">Redo Transaction</button>
+    <button id="clearTransactionsButton">Clear Transactions</button>
+    <button id="resetButton">Reset Num and Transactions</button>
+    <br>
     <script type='module' src="./tests.js"></script>
 </body>
 

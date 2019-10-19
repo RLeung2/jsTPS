@@ -1,4 +1,4 @@
-import jsTPS_transaction from '.../src/jsTPS.js';
+import jsTPS_transaction from './jsTPS_transaction.js';
 
 class OrMask_Transaction extends jsTPS_transaction {
     constructor(initNum, initIntNum, initMask) {

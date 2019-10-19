@@ -1,4 +1,4 @@
-import jsTPS_transaction from '.../src/jsTPS.js';
+import jsTPS_transaction from './jsTPS_transaction.js';
 
 /**
  * AddToNum_Transaction.java
@@ -9,6 +9,7 @@ import jsTPS_transaction from '.../src/jsTPS.js';
  */
 class AddToNum_Transaction extends jsTPS_transaction {
     constructor(initNum, initAmountToAdd) {
+        super()
         // THIS IS THE OBJECT IT WILL MANIPULATE
         this.num = initNum;
         this.amountToAdd = initAmountToAdd;
@@ -18,18 +19,19 @@ class AddToNum_Transaction extends jsTPS_transaction {
      * This transaction simply adds the value to the num.
      */
     doTransaction() {
-        let oldNum = num.getNum();
-        let newNum = oldNum + amountToAdd;
-        this.num = newNum;
+        let oldNum = this.num.getNum();
+        let newNum = oldNum + this.amountToAdd;
+        this.num.setNum(newNum);
     }
 
     /**
      * As the reverse of do, this method substracts from num.
      */
     undoTransaction() {
-        let oldNum = num.getNum();
-        let newNum = oldNum - amountToAdd;
-        this.num = newNum;
+        this.num.setNum(this.num.getNum() - this.amountToAdd);
+        //let oldNum = this.num
+        //let newNum = oldNum - this.amountToAdd;
+        //this.num = newNum;
     }
 
     /**
