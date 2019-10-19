@@ -7,7 +7,7 @@ import jsTPS_transaction from './src/jsTPS.js'
  * can be stored in the jTPS transaction stack and must be constructed
  * with all the data necessary to perform both do and undo.
  */
-class AddToNum_Transaction extends jsTPS_Transaction {
+class AddToNum_Transaction extends jsTPS_transaction {
     constructor(initNum, initAmountToAdd) {
         // THIS IS THE OBJECT IT WILL MANIPULATE
         this.num = initNum;
