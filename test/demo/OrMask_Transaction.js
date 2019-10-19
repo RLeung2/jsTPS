@@ -1,6 +1,6 @@
 import jsTPS_transaction from './src/jsTPS.js'
 
-class AndMask_Transaction extends jsTPS_transaction {
+class OrMask_Transaction extends jsTPS_transaction {
     constructor(initNum, initIntNum, initMask) {
         // THIS IS THE OBJECT IT WILL MANIPULATE
         this.num = initNum;
@@ -12,7 +12,7 @@ class AndMask_Transaction extends jsTPS_transaction {
      * This transaction simply adds the value to the num.
      */
     doTransaction() {
-        this.num.andMask(this.mask);
+        this.num.orMask(this.mask);
     }
 
     /**
@@ -28,6 +28,6 @@ class AndMask_Transaction extends jsTPS_transaction {
      * @return A string storing a textual summary of this object.
      */
     toString() {
-        return "And Mask " + this.mask;
+        return "Or Mask " + this.mask;
     }
 }

@@ -10,7 +10,7 @@
 class Num {
     constructor() {
         // THE NUMBER THIS CLASS MANAGES
-        this.num = 0
+        this.num = 0;
     }
 
     /**
