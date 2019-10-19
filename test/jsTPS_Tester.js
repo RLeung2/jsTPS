@@ -1,6 +1,6 @@
 import jsTPS_transaction from '../src/jsTPS.js';
 import jsTPS from '../src/jsTPS.js';
-import Num from 'Num.js'
+import Num from './Num.js'
 
 class jsTPS_Tester {
     constructor() {
