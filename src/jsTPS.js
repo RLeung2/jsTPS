@@ -208,3 +208,4 @@ class jsTPS {
         return text;
     }
 }
+export default jsTPS_transaction;
