@@ -157,7 +157,7 @@ class jsTPS {
       * can be undone.
       */
     getUndoSize() {
-        return this.mostRecentTransaction + 1;
+        return (this.mostRecentTransaction + 1);
     }
      
      /**
@@ -167,7 +167,7 @@ class jsTPS {
       * @return true if an undo operation is possible, false otherwise.
       */
     hasTransactionToUndo() {
-        return this.mostRecentTransaction >= 0;
+        return (this.mostRecentTransaction >= 0);
     }
      
      /**

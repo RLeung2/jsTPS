@@ -2,6 +2,7 @@ import jsTPS_transaction from './jsTPS_transaction.js';
 
 class AndMask_Transaction extends jsTPS_transaction {
     constructor(initNum, initIntNum, initMask) {
+        super();
         // THIS IS THE OBJECT IT WILL MANIPULATE
         this.num = initNum;
         this.intNum = initIntNum;
